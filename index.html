@@ -41,6 +41,18 @@
             }
         }
 
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0 auto 30px;
+            display: block;
+            opacity: 0;
+            animation: fadeIn 0.6s ease-in 0.2s forwards;
+            border-radius: 50%;
+            border: 1px solid #333333;
+        }
+
         h1 {
             color: #ffffff;
             text-align: center;
@@ -123,6 +135,11 @@
                 padding: 30px 20px;
             }
 
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+
             h1 {
                 font-size: 2em;
             }
@@ -135,6 +152,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="mypic.jpg" alt="Profile Picture" class="profile-image">
         <h1>Student Profile</h1>
         
         <div class="info-card">
