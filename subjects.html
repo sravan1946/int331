@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subjects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 0.6s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .nav-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9em;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 40px;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover {
+            color: #888888;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2em;
+            font-weight: 300;
+            letter-spacing: -1px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        thead {
+            border-bottom: 1px solid #333333;
+        }
+
+        th {
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.85em;
+            font-weight: 400;
+            text-align: left;
+            padding: 15px 0;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #333333;
+            transition: border-color 0.2s ease;
+            opacity: 0;
+            animation: fadeInRow 0.4s ease-in forwards;
+        }
+
+        @keyframes fadeInRow {
+            from {
+                opacity: 0;
+                transform: translateX(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        tbody tr:hover {
+            border-bottom-color: #ffffff;
+        }
+
+        td {
+            color: #ffffff;
+            font-weight: 300;
+            padding: 20px 0;
+        }
+
+        td:first-child {
+            font-size: 1.1em;
+        }
+
+        td:last-child {
+            color: #888888;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            th, td {
+                padding: 12px 0;
+                font-size: 0.9em;
+            }
+
+            td:first-child {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="nav-link">← Back to Profile</a>
+        <h1>Subjects</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Name</th>
+                    <th>Subject Code</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="animation-delay: 0.1s">
+                    <td>Formal Languages and Automation Theory</td>
+                    <td>CSE322</td>
+                </tr>
+                <tr style="animation-delay: 0.2s">
+                    <td>Digital Evidence Analysis</td>
+                    <td>INT250</td>
+                </tr>
+                <tr style="animation-delay: 0.3s">
+                    <td>Securing Computing Systems</td>
+                    <td>INT244</td>
+                </tr>
+                <tr style="animation-delay: 0.4s">
+                    <td>DevOps</td>
+                    <td>INT331</td>
+                </tr>
+                <tr style="animation-delay: 0.5s">
+                    <td>Prelude to Competitive Coding</td>
+                    <td>CSE329</td>
+                </tr>
+                <tr style="animation-delay: 0.6s">
+                    <td>Competitive Coding Approaches-Techniques</td>
+                    <td>CSE330</td>
+                </tr>
+                <tr style="animation-delay: 0.7s">
+                    <td>Training in Programming</td>
+                    <td>CSE343</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
